@@ -1,6 +1,6 @@
 from google.cloud import aiplatform_v1 as ai
 
-def forecasting_batch_prediction_job_sample(event, context):
+def forecasting_batch_prediction_job(event, context):
     project = "project_id"	#replace "project_id" with your GCP project id 
     display_name = "batch_predict_weekly"
     gcs_source_uri = f"gs://{event['bucket']}/{event['name']}"
